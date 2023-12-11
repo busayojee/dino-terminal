@@ -1,0 +1,4 @@
+click==8.1.7
+curses-menu==0.7.1
+Deprecated==1.2.14
+wrapt==1.16.0
