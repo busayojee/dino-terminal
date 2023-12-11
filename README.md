@@ -4,8 +4,8 @@
 
 ## How to play the game
 
-## Mention Bugs
-
 ## Possible Updates
+- Easter Eggs
+- Birds Flying
 
 ## Open for Pull Request
