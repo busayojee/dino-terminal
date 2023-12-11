@@ -45,7 +45,7 @@ class Play(Game):
             self.draw_line_buffer()
             self.move_line_buffer()
             self.draw_obstacle()
-            self.increment_score()  # Increment score for each iteration
+            self.increment_score()
             self.display_score() 
             self.linBr += 1
             if self.score > Play.scoreCheckpoint:
@@ -62,9 +62,9 @@ class Play(Game):
             sleep_time = max(0, self.frame_time - elapsed_time)
             time.sleep(sleep_time)
 
-
+        # Display game over message
         self.stdscr.addstr(self.height // 2, self.width // 2 - 5, "Game Over!")
-        self.stdscr.addstr(self.height // 2+1, self.width // 2 - 5, f"Score: {self.score}")  # Display game over message
+        self.stdscr.addstr(self.height // 2+1, self.width // 2 - 5, f"Score: {self.score}")  
         self.stdscr.refresh()
         time.sleep(2)
         self.stdscr.getch()
