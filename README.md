@@ -4,17 +4,17 @@ If you're not familiar with the popular Dino Chrome game which surprisingly ease
 
 Dino-Terminal is a simple dino game that is built on the mastery of manipulating your terminal.
 
-Solarized dark             |  Solarized Ocean
+Here's what we don't want: The common dino longing for an affection outside Chrome.        |  Here's our (soon-to-be beautiful) dino charting its (soon-to-be modified) course through our terminal.
 :-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
+![cdino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/1083a758-3b4f-4b84-b2a6-27dbd4a82335)  |  ![dino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/4c0001bd-9263-4c53-bb75-b3b88b65aeb1)
 
-Here's what we don't want: The common dino longing for an affection outside Chrome.
 
-![cdino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/1083a758-3b4f-4b84-b2a6-27dbd4a82335)
 
-Here's our (soon-to-be beautiful) dino charting its (soon-to-be modified) course through our terminal.
 
-![dino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/4c0001bd-9263-4c53-bb75-b3b88b65aeb1)
+
+
+
+
 
 ## Installation
 To install, simply ```pip install dino-terminal``` 
