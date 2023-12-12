@@ -10,7 +10,6 @@ Here's what we don't want: The common dino longing for an affection outside Chro
 
 | <img width="178" alt="Screenshot 2023-12-12 at 22 13 07" src="https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/8c91e7db-9587-4e44-b863-e977f7481bdb">  | <img width="179" alt="Screenshot 2023-12-12 at 22 11 18" src="https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/fc59de75-1104-47f1-b9f8-b4e17fd75b66"> |
 :--------:|:--------:
-
 ![cdino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/1083a758-3b4f-4b84-b2a6-27dbd4a82335)  |  ![dino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/4c0001bd-9263-4c53-bb75-b3b88b65aeb1)
 
 ## Installation
