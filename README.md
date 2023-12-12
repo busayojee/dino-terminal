@@ -7,7 +7,9 @@ Here's what we don't want: The common dino longing for an affection outside Chro
 
 | <span style="font-weight:normal">The common dino longing for affection outside Chrome</span> | <span style="font-weight:normal">Our (soon-to-be beautiful) dino charting its (soon-to-be modified) course through our terminal</span> |
 :--------:|:--------:
-![cdino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/1083a758-3b4f-4b84-b2a6-27dbd4a82335)  |  ![dino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/4c0001bd-9263-4c53-bb75-b3b88b65aeb1)
+<img width="173" alt="Screenshot 2023-12-12 at 22 11 03" src="https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/d4451701-5ed8-4133-a61a-a76bcae2bb1e">
+![cdino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/1083a758-3b4f-4b84-b2a6-27dbd4a82335)  |  <img width="179" alt="Screenshot 2023-12-12 at 22 11 18" src="https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/fc59de75-1104-47f1-b9f8-b4e17fd75b66">
+![dino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/4c0001bd-9263-4c53-bb75-b3b88b65aeb1)
 
 ## Installation
 To install, simply ```pip install dino-terminal``` 
