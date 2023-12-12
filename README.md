@@ -13,8 +13,7 @@ Here's our (soon-to-be beautiful) dino charting its (soon-to-be modified) course
 ![dino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/4c0001bd-9263-4c53-bb75-b3b88b65aeb1)
 
 ## Installation
-To install
-```pip install dino-terminal```
+To install, simply ```pip install dino-terminal``` 
 
 ## How to play the game
 
