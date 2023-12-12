@@ -17,7 +17,10 @@ To install, simply ```pip install dino-terminal```
 - Press the down arrow key (↓) to duck beneath hovering obstacles
 
 ## Possible Updates
-- Easter Eggs
-- Birds Flying
+This project is a fun project to learn about manipulating strings on the terminal and is based on the curses library. Here are some possible updates to improve the game:
 
-## Open for Pull Request
+- Include easter eggs.
+- Include randomly generated flying birds to duck below.
+- Train an AI model to successfully play the game without losing.
+  
+
