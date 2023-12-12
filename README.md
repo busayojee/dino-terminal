@@ -23,5 +23,5 @@ This project is a fun project to learn about manipulating strings on the termina
 - Include easter eggs.
 - Include randomly generated flying birds to duck below.
 - Train an AI model to successfully play the game without losing.
-  
+- Pull requests is welcomed 😁
 
