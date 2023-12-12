@@ -13,8 +13,8 @@ Here's what we don't want: The common dino longing for an affection outside Chro
 To install, simply ```pip install dino-terminal``` 
 
 ## How to play the game
-- Press the Space Bar to jump over obstacles
-- Press the down arrow key to duck beneath hovering obstacles
+- Press the space bar key to jump over obstacles
+- Press the down arrow key (↓) to duck beneath hovering obstacles
 
 ## Possible Updates
 - Easter Eggs
