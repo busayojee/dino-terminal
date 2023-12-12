@@ -4,6 +4,10 @@ If you're not familiar with the popular Dino Chrome game which surprisingly ease
 
 Dino-Terminal is a simple dino game that is built on the mastery of manipulating your terminal.
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://...Dark.png)  |  ![](https://...Ocean.png)
+
 Here's what we don't want: The common dino longing for an affection outside Chrome.
 
 ![cdino](https://github.com/nelsonifechukwu/dino-terminal/assets/44223263/1083a758-3b4f-4b84-b2a6-27dbd4a82335)
