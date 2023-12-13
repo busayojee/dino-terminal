@@ -1,6 +1,6 @@
 ## Introduction
 
-If you're not familiar with the popular Dino Chrome game which surprisingly eases tension during a marathon coding session, then you might be living under a rock. However, I'm here to introduce you to Dino-Terminal. Don't worry too much, you guessed right: It's the same Dino game (with more features of course), but in the terminal. 
+If you're not familiar with the popular Dino Chrome game which surprisingly eases tension during a marathon coding session, you might be living under a rock. However, I'd like to introduce you to Dino-Terminal. Don't worry too much, you guessed right: It's the same Dino game (with more features) but in the terminal. 
 
 Dino-Terminal is a simple dino game that is built on your terminal.
 Here's what we don't want: The common dino longing for an affection outside Chrome.
@@ -17,10 +17,10 @@ To install, simply ```pip install dino-terminal```
 - Press the space bar key to jump over obstacles
 
 ## Possible Updates
-This project is a fun project to learn about manipulating strings on the terminal and is based on the curses library. Here are some possible updates to improve the game:
+This project is fun to learn about manipulating strings on the terminal and is based on the curses library. Here are some possible updates to improve the game:
 
 - Include easter eggs.
 - Include randomly generated flying birds to duck below.
 - Train an AI model to successfully play the game without losing.
-- Pull requests is welcomed 😁
+- Pull requests are welcomed 😁
 
