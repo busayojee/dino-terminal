@@ -15,7 +15,6 @@ To install, simply ```pip install dino-terminal```
 ## How to play the game
 - Usage: ```dino-terminal```
 - Press the space bar key to jump over obstacles
-- Press the down arrow key (↓) to duck beneath hovering obstacles
 
 ## Possible Updates
 This project is a fun project to learn about manipulating strings on the terminal and is based on the curses library. Here are some possible updates to improve the game:
