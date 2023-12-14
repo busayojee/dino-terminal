@@ -1,6 +1,6 @@
-from .game import Game
+import game as gm
 import time
-class Play(Game):
+class Play(gm.Game):
     baseTime = 0.1
     scoreCheckpoint = 200
     def __init__(self, stdscr, game_width, dino):
