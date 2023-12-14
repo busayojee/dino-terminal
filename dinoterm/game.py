@@ -3,11 +3,10 @@ import random
 
 class Game:
     dinoHeight = 11
-    def __init__(self, stdscr, _screen_width, dino):
+    def __init__(self, stdscr, _screen_dimension, dino):
         self.stdscr = stdscr
-        self.screen_width = _screen_width
         self.dino = dino
-        self.height, self.width = stdscr.getmaxyx()
+        self.screen_height, self.screen_width = _screen_dimension
         self.LineBuffer = []
         self.gen = True
         self.__num= 0
@@ -23,7 +22,8 @@ class Game:
         for i, row in enumerate(self.dino):
             for j, char in enumerate(row):
                 part_height = Game.dinoHeight - i + y_pos
-                self.stdscr.addstr(self.height - part_height, j + x_pos, char)
+                self.stdscr.addstr(self.screen_height - part_height, j + x_pos, char)
+                
 
 
     def first_line(self, lenght):
@@ -40,9 +40,9 @@ class Game:
     def draw_line_buffer(self):
         for i in range(self.screen_width):
             if self.LineBuffer[i] == '-':
-                self.stdscr.addstr(self.height - 2, i, self.LineBuffer[i])
+                self.stdscr.addstr(self.screen_height - 2, i, self.LineBuffer[i])
             else:
-                self.stdscr.addstr(self.height - 1, i, self.LineBuffer[i])
+                self.stdscr.addstr(self.screen_height - 2, i, self.LineBuffer[i])
 
     def move_line_buffer(self):
         for i in range(self.screen_width-1):
@@ -69,5 +69,5 @@ class Game:
 
     def display_score(self):
         score_str = f"Score: {self.score}"
-        self.stdscr.addstr(0, self.width - len(score_str), score_str)
+        self.stdscr.addstr(0, self.screen_width - len(score_str), score_str)
 

@@ -3,8 +3,8 @@ import time
 class Play(gm.Game):
     baseTime = 0.1
     scoreCheckpoint = 200
-    def __init__(self, stdscr, game_width, dino):
-        super().__init__(stdscr, game_width, dino)
+    def __init__(self, stdscr, screen_width, dino):
+        super().__init__(stdscr, screen_width, dino)
         self.y_pos = 0
         self.x_pos = 0
         self.jumping = False
@@ -29,13 +29,13 @@ class Play(gm.Game):
 
     def check_collision(self):
         dino_bottom_row = self.dino[-1]
-        for i in range(min(self.game_width, len(dino_bottom_row))):
-            if (dino_bottom_row[i] == '*' and i + self.x_pos < self.game_width and self.LineBuffer[i + self.x_pos] == '-' and self.y_pos < 1):
+        for i in range(min(self.screen_width, len(dino_bottom_row))):
+            if (dino_bottom_row[i] == '*' and i + self.x_pos < self.screen_width and self.LineBuffer[i + self.x_pos] == '-' and self.y_pos < 1):
                 self.collision = True
                 
 
     def play(self):
-        self.first_line(self.game_width)
+        self.first_line(self.screen_width)
         while not self.collision:
             start_time = time.time()
 
@@ -63,8 +63,8 @@ class Play(gm.Game):
             time.sleep(sleep_time)
 
         # Display game over message
-        self.stdscr.addstr(self.height // 2, self.width // 2 - 5, "Game Over!")
-        self.stdscr.addstr(self.height // 2+1, self.width // 2 - 5, f"Score: {self.score}")  
+        self.stdscr.addstr(self.screen_height // 2, self.screen_width // 2 - 5, "Game Over!")
+        self.stdscr.addstr(self.screen_height // 2+1, self.screen_width // 2 - 5, f"Score: {self.score}")  
         self.stdscr.refresh()
         time.sleep(2)
         self.stdscr.getch()
