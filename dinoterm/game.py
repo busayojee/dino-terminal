@@ -65,7 +65,8 @@ class Game:
             self.LineBuffer[self.screen_width-1] = '_'
 
     def increment_score(self):
-        self.score += 1
+        if(self.LineBuffer[0]=='-' and self.LineBuffer[1]=='-'):
+            self.score += 1
 
     def display_score(self):
         score_str = f"Score: {self.score}"

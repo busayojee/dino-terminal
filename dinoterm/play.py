@@ -3,13 +3,15 @@ import time
 class Play(gm.Game):
     baseTime = 0.1
     scoreCheckpoint = 200
-    def __init__(self, stdscr, screen_width, dino):
+    def __init__(self, stdscr, screen_width, dino, jump_height=7):
         super().__init__(stdscr, screen_width, dino)
         self.y_pos = 0
         self.x_pos = 0
         self.jumping = False
         self.down = False
         self.collision = False
+        self.jum_height = jump_height
+        
     
     def jump(self,key):
         if key == 32:
@@ -19,7 +21,7 @@ class Play(gm.Game):
         if self.jumping:
             self.y_pos += 1
 
-            if self.y_pos == 7:
+            if self.y_pos == self.jum_height:
                 self.down = True
                 self.jumping = False
         if self.down:
@@ -45,7 +47,7 @@ class Play(gm.Game):
             self.draw_line_buffer()
             self.move_line_buffer()
             self.draw_obstacle()
-            self.increment_score()
+            
             self.display_score() 
             self.linBr += 1
             if self.score > Play.scoreCheckpoint:
@@ -57,7 +59,7 @@ class Play(gm.Game):
             self.jump(key)
 
             self.check_collision()
-
+            self.increment_score()
             elapsed_time = time.time() - start_time
             sleep_time = max(0, self.frame_time - elapsed_time)
             time.sleep(sleep_time)
