@@ -1,8 +1,7 @@
 import curses
-import play as ply
+from play import Play
 import click
 from __init__ import VERSION_STRING
-import threading as trd
 import time
 
 def getScreen_dimension(stdscr):
@@ -22,10 +21,10 @@ def getScreen_dimension(stdscr):
             x += 1
         except:
             break
-    return [y,x]
+    return (y,x)
 
-def main_function(stdscr,scr_dimension):           
-    game_width = 125
+def main_function(stdscr):           
+    scr_dimension = getScreen_dimension(stdscr)
     jump_height = 7
     dino = [[' ',' ',' ',' ',' ',' ','*','*','*',' '],
         ['*',' ',' ',' ',' ','*','*','*','0    ','*'],
@@ -46,7 +45,7 @@ def main_function(stdscr,scr_dimension):
         time.sleep(5)
         return
     
-    play = ply.Play(stdscr, scr_dimension, dino, jump_height)
+    play = Play(stdscr, scr_dimension, dino, jump_height)
     play.play()
 
 def print_version(ctx, param, value):
@@ -56,15 +55,9 @@ def print_version(ctx, param, value):
     ctx.exit()
 
 @click.command()
-@click.option("-v", "--version", is_flag       =True, callback=print_version,expose_value=False, is_eager=True, help="Show version and exit")
+@click.option("-v", "--version", is_flag=True, callback=print_version,expose_value=False, is_eager=True, help="Show version and exit")
 def main():
-    stdscr = curses.initscr()
-    # curses.wrapper(main_function(stdscr))
+    curses.wrapper(main_function)
     
-    main_function(stdscr,getScreen_dimension(stdscr))
-        
-    stdscr.clear()
-    stdscr.refresh()
-
 if __name__ == '__main__':
     main()
