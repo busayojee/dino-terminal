@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='dino-terminal',
-    version='1.0.0',
+    version='1.0.1',
     description="Chrome Dino game in your terminal",
     author="Alabi Busayo",
     author_email="busayo_jee@yahoo.com",

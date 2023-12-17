@@ -1,4 +1,4 @@
-from game import Game
+from .game import Game
 import time
 class Play(Game):
     baseTime = 0.1

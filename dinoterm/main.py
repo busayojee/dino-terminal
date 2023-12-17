@@ -1,7 +1,7 @@
 import curses
-from play import Play
+from .play import Play
 import click
-from __init__ import VERSION_STRING
+from . import VERSION_STRING
 import time
 
 def getScreen_dimension(stdscr):
@@ -59,5 +59,5 @@ def print_version(ctx, param, value):
 def main():
     curses.wrapper(main_function)
     
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
