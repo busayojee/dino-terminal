@@ -40,7 +40,7 @@ class Game:
     def draw_line_buffer(self):
         for i in range(self.screen_width):
             if self.LineBuffer[i] == '-':
-                self.stdscr.addstr(self.screen_height - 2, i, self.LineBuffer[i])
+                self.stdscr.addstr(self.screen_height - 3, i, self.LineBuffer[i])
             else:
                 self.stdscr.addstr(self.screen_height - 2, i, self.LineBuffer[i])
 
