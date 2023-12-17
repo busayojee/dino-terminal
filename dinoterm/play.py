@@ -1,16 +1,16 @@
-import game as gm
+from game import Game
 import time
-class Play(gm.Game):
+class Play(Game):
     baseTime = 0.1
-    scoreCheckpoint = 200
-    def __init__(self, stdscr, screen_width, dino, jump_height=7):
-        super().__init__(stdscr, screen_width, dino)
+    scoreCheckpoint = 15
+    def __init__(self, stdscr, _screen_dimension, dino, jump_height=7):
+        super().__init__(stdscr, _screen_dimension, dino)
         self.y_pos = 0
         self.x_pos = 0
         self.jumping = False
         self.down = False
         self.collision = False
-        self.jum_height = jump_height
+        self.jump_height = jump_height
         
     
     def jump(self,key):
@@ -21,7 +21,7 @@ class Play(gm.Game):
         if self.jumping:
             self.y_pos += 1
 
-            if self.y_pos == self.jum_height:
+            if self.y_pos == self.jump_height:
                 self.down = True
                 self.jumping = False
         if self.down:
