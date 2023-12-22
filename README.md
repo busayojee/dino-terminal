@@ -21,6 +21,5 @@ This project is fun to learn about manipulating strings on the terminal and is b
 
 - Include easter eggs.
 - Include randomly generated flying birds to duck below.
-- Train an AI model to successfully play the game without losing.
 - Pull requests are welcomed 😁
 
